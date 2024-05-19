@@ -7,7 +7,8 @@ body {
     width: 100%;
     overflow:hidden;
     font-family: 'General Sans';
-    background-color:transparent;
+    /* background-color:transparent; */
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
 }
 
 h1{
@@ -53,13 +54,16 @@ button:hover {
     color:royalblue;
 }
 
-#btn{
-    margin-top: 2%;
-    padding: 10px 30px;
-    width: 80%;
-    min-width: 40%;
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-3"] {
+      width: 100%;
+    }
+  }
+
+  footer{
     display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-wrap: wrap;
-}
+justify-content: center;
+color: chartreuse;
+  }
